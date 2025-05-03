@@ -15,11 +15,11 @@ FIELD_MASK = "routes.legs,routes.duration,routes.distanceMeters,routes.polyline.
 async def get_route(
     origin: str,
     destination: str,
-    travel_mode: str = "TRANSIT",
-    computeAlternativeRoutes: bool = True,
+    travel_mode: str = "TRANSIT", 
+    computeAlternativeRoutes: bool = True, 
 ) -> Any:
     """
-    Calls Google Directions API to compute routes between origin and destination.
+    Calls Google Routes API to compute routes between origin and destination.
     """
     headers = {
         "Content-Type": CONTENT_TYPE,
