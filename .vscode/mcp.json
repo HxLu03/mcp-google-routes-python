@@ -1,0 +1,16 @@
+{
+    "servers": {
+        "google-routes-docker": {
+            "type": "stdio",
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "--init",
+                "-e", "DOCKER_CONTAINER=true",
+                "google-routes"
+            ]
+        }
+    }
+}
